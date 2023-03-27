@@ -12,10 +12,10 @@
 ![Nginx-install](./Image-2/Nginx-Install-2.PNG)
 
 `sudo systemctl status nginx`--(To verify that nginx is running as a Service in our Ubuntu OS)
-![Apache-webserver](./Images-1/Apache-webserver-3.PNG)
+![Nginx-Test](./Image-2/Nginx-Test-3.PNG)
 
 `curl http://localhost:80` --(Using curling command with DNS Name option - to check how we can access Nginx server locally within ubuntu shell. Objective - Use curl command to request our Nginx Server on port 80.
-![AccessServerLocal](./Image-2/Nginx-AccessServerLocal-4.PNG)
+![Nginx-AccessServerLocal](./Image-2/Nginx-AccessServerLocal-4.PNG)
 
 `http://52.207.136.248` --(Opened a new browser and ran command to test if we can view our Nginx server via the internet. Webpage displayed validating Nginx web server is operational, after installation on ubuntu system.
 ![Nginx-AccessServerInternet](./Image-2/Nginx-AccessServerinternet-5.PNG)
@@ -32,7 +32,7 @@
 ![Mysql-login](./Image-2/Mysql-Login-2.PNG)
 
 `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '<password>';`--(Setting up a default authenticate password for mysql,confirming mysql query for password)
-![Mysql-set-password](./Images-1/Mysql-set-password-3.PNG)
+![Mysql-set-Password](./Image-2/Mysql-set-Password-3.PNG)
 
 `sudo mysql_secure_installation`--(running interactive security script that comes pre-installed with MySQL to secure my password, password plugin validated).
 ![Mysql-security-install](./Image-2/Mysql-securrity-installed-4.PNG)
@@ -80,7 +80,7 @@
 ![PHPNginx-Creat-PHPTestFile](./Image-2/PHPNginx-Creat-PHPTestFile-1.PNG)
 
 `<?php info.php();`--(Edited new file in my document root with valid PHP code in the nano line text editor).
-![PHPNginx-PHPCode](./Image-2/PHPNginx-Creat-PHPTestFile-2.PNG)
+![PHPNginx-PHPCode](./Image-2/PHPNginx-PHPCode-2.PNG)
 
 `<?php info.php();`--(Access my webpage through web browser by using public IP address I set up in your Nginx configuration file, validating that Nginx can correctly hand .php files off to my PHP processor.)
 ![PHPNginx-Test-PublicIpAd](./Image-2/PHPNginx-Test-PublicIpAd-3.PNG)
@@ -114,7 +114,7 @@
 ![Msql-InsertContent-TestTable](./Image-2/Msql-InsertContent-TestTable-2-8.PNG); 
 
 `SELECT * FROM rain_database.todo_list;` --(To confirm that the data was successfully saved to my test table)
-![Msql-ConfirmData-TestTable](./Image-2/Msql-ConfirmData-Table-2-9.PNG);
+![Msql-ConfirmData-TestTable](./Image-2/Msql-ConfirmData-TestTable-2-9.PNG);
 
 `nano /var/www/evezidomainLEMP/todo_list.php` --(Create a PHP test script that will connect to MySQL and query for my content. Create a new PHP file in your custom web root directory -  using nano editor. using snippet content into my todo_list.php scrip)
 ![Msql-PHP-TestScript](./Image-2/Msql-PHP-TestScript-2-10.PNG);
